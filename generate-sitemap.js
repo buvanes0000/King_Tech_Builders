@@ -9,6 +9,7 @@ const urls = [
   { url: '/#contact', changefreq: 'monthly', priority: 0.7 },
   { url: '/#projects', changefreq: 'monthly', priority: 0.4 },
   { url: '/#service', changefreq: 'monthly', priority: 0.5 },
+  { url: '/favicon.ico', changefreq: 'yearly', priority: 0.1 }, 
 ];
 
 const sitemap = new SitemapStream({ hostname: 'https://www.kingtechbuilders.com' });
