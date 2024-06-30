@@ -1,0 +1,160 @@
+.projects {
+  padding: 60px 20px;
+  background: #f4f4f4;
+  text-align: center;
+}
+
+.projects-heading {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #343a40;
+  font-weight: 700;
+  position: relative;
+}
+
+.projects-heading::after {
+  content: '';
+  width: 60px;
+  height: 4px;
+  background-color: #55AD9B; /* Green color */
+  display: block;
+  margin: 8px auto;
+  border-radius: 2px;
+}
+
+.projects-description {
+  font-size: 1.2em;
+  margin-bottom: 40px;
+  color: #666;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 20px;
+}
+
+.project-media-container {
+  width: 100%;
+  height: 200px;
+  background: #ddd;
+}
+
+.project-media {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-info {
+  padding: 20px;
+}
+
+.project-name {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #55AD9B; /* Green color */
+  font-weight: 700;
+}
+
+.project-location, .project-details {
+  font-size: 1em;
+  color: #666;
+}
+
+.project-status {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.2em;
+  color: #55AD9B; /* Green color */
+}
+
+.project-status.ongoing {
+  color: #FFA500; /* Orange color for ongoing */
+}
+
+@media (max-width: 768px) {
+  .projects-heading {
+    font-size: 2em;
+  }
+
+  .project-card {
+    margin-bottom: 20px;
+  }
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 80%;
+  max-width: 800px;
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+  color: #333;
+}
+
+.modal-media-container {
+  width: 100%;
+  height: 400px;
+  background: black;
+}
+
+.modal-media {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.modal-info {
+  padding: 20px;
+}
+
+.modal-name {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.modal-location, .modal-details {
+  font-size: 1em;
+  color: #6c757d;
+}

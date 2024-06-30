@@ -1,0 +1,131 @@
+/* General styles for the Blog section */
+.blog-section {
+  padding: 50px 20px;
+  background-color: #f0f4f8;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blog-heading {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  color: #333;
+  position: relative;
+  display: inline-block;
+}
+
+.blog-heading::after {
+  content: '';
+  width: 60px;
+  height: 4px;
+  background-color: #55AD9B;
+  display: block;
+  margin: 8px auto;
+}
+
+/* Grid styles for Blog section */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  justify-content: center;
+}
+
+/* Styles for each blog card */
+.blog-card {
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.blog-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.blog-content {
+  padding: 20px;
+  text-align: left;
+}
+
+.blog-category {
+  display: inline-block;
+  font-size: 0.9em;
+  color: #fff;
+  background-color: #95D2B3;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.blog-title {
+  font-size: 1.5em;
+  margin: 10px 0;
+  color: #333;
+}
+
+.blog-description {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.blog-link {
+  font-size: 1em;
+  color: #95D2B3;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.blog-link:hover {
+  text-decoration: underline;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .blog-heading {
+    font-size: 2em;
+  }
+
+  .blog-title {
+    font-size: 1.3em;
+  }
+
+  .blog-description {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-heading {
+    font-size: 1.8em;
+  }
+
+  .blog-title {
+    font-size: 1.1em;
+  }
+
+  .blog-description {
+    font-size: 0.8em;
+  }
+}
+

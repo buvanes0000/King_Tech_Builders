@@ -1,0 +1,141 @@
+/* Container for the entire contact section */
+.contact-container {
+    padding: 60px 20px;
+    background: #f9f9f9;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+  }
+  
+  /* Title for the contact section */
+  .contact-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+
+  }
+  .contact-title::after {
+    content: '';
+    width: 60px;
+    height: 4px;
+    background-color: #55AD9B;
+    display: block;
+    margin: 8px auto;
+  }
+  
+  /* Form container */
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+  }
+  
+  /* Wrapper for form inputs */
+  .form-input-wrapper,
+  .form-textarea-wrapper {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  /* Styling for text inputs */
+  .form-input {
+    width: 100%;
+    padding: 15px 15px 15px 50px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+  }
+  
+  /* Styling for text areas */
+  .form-textarea {
+    width: 100%;
+    padding: 15px 15px 15px 50px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    height: 150px;
+    box-sizing: border-box;
+  }
+  
+  /* Positioning and styling for icons inside inputs */
+  .input-icon {
+    position: absolute;
+    left: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ccc;
+  }
+  
+  /* Adjusted positioning for textarea icon */
+  .textarea-icon {
+    top: 30px;
+  }
+  
+  /* Styling for the submit button */
+  .submit-button {
+    width: 100%;
+    padding: 15px;
+    background: #95D2B3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+  
+  .submit-button:hover {
+    background: #16b063;
+  }
+  
+  /* Margin for icon inside submit button */
+  .submit-icon {
+    margin-left: 10px;
+  }
+  
+  /* Result message styling */
+  .result-message {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .result-message.success {
+    color: green;
+  }
+  
+  .result-message.error {
+    color: red;
+  }
+  
+  /* Container for HCaptcha */
+  .hcaptcha-container {
+    margin-bottom: 20px;
+    text-align: center;
+    display: flex;
+   
+  }
+
+  
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .contact-container {
+      padding: 40px 20px;
+    }
+  }
+  

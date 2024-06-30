@@ -1,0 +1,122 @@
+/* General styles for the CEO section */
+.ceo-section {
+    padding: 50px 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+  }
+  
+  .ceo-heading {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #343a40;
+  }
+  .ceo-heading::after {
+    content: '';
+    width: 60px;
+    height: 4px;
+    background-color: #55AD9B;
+    display: block;
+    margin: 8px auto;
+  }
+  
+  .ceo-subheading {
+    font-size: 1.2em;
+    color: #6c757d;
+    margin-bottom: 40px;
+  }
+  
+  /* CEO cards container */
+  .ceo-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  /* Individual CEO card */
+  .ceo-card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 300px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .ceo-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  .ceo-image-container {
+    position: relative;
+  }
+  
+  .ceo-image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .ceo-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .ceo-card:hover .ceo-overlay {
+    opacity: 1;
+  }
+  
+  .ceo-overlay-text {
+    color: #fff;
+    text-align: center;
+  }
+  
+  .ceo-name {
+    font-size: 1.5em;
+    margin: 0;
+  }
+  
+  .ceo-degree {
+    font-size: 1em;
+    margin: 10px 0 0;
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .ceo-heading {
+      font-size: 2em;
+    }
+  
+    .ceo-subheading {
+      font-size: 1em;
+    }
+  
+    .ceo-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .ceo-card {
+      width: 90%;
+    }
+  
+    .ceo-name {
+      font-size: 1.2em;
+    }
+  
+    .ceo-degree {
+      font-size: 0.9em;
+    }
+  }
+  
