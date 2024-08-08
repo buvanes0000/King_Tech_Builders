@@ -14,7 +14,7 @@ const Footer = () => {
           <div className="footer-section address">
             <h3>Our Office</h3>
             <p>69B Palai Road west,First Floor 3RD Mile.</p>
-            <p>Thoothukudi-627428, India</p>
+            <p>Thoothukudi-628008, India</p>
             <p>Contact:+91 93602 54607, +91 86103 62606</p>
           </div>
           <div className="footer-section social">
